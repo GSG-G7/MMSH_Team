@@ -56,6 +56,10 @@ h3 {
 }
 .hovereffect {
     overflow: hidden;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
 }
 .hovereffect img {
     display: block;
@@ -86,7 +90,8 @@ h3 {
 }
 .hovereffect p {
     margin-bottom: 15px;
-    padding-right: 15px;
+    padding-right: 25px;
+    border-left: 25px;
 }
 .hovereffect .info {
     transition: all .3s ease-in;
