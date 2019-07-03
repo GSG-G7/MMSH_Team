@@ -1,3 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin :0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0.25rem;
+    position: sticky;
+    top:0;
+    z-index:1;
+}
+.nav-colored { background-color:#333; }
+.nav-transparent { background-color:transparent;}
+
+.navbarList{
+    list-style:none;
+    display:flex;
+}
+.menu{display: none;}
+
+.logo{
+    color:rgb(182, 196, 64);
+}
+
+.logo__icon{
+    color:red;
+}
+.navbarList a{
+    font-family: 'Roboto';
+    padding:10px 20px;
+    color:#fff;
+
+
+}
+
+.navbarList a:hover{
+    background:rgba(202, 126, 12, 0.2);
+    border-radius: 5px;
+}
+@media(max-width:600px){
+    nav{
+        flex-direction: column;
+        padding:0.25rem;
+    }
+    .logo{
+        margin-bottom: 1.5rem;
+        text-decoration: underline;
+    }
+    .navbarList {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .navbarList li{
+        display: block;
+        width:100%;
+        text-align: center;
+    }
+    
+}
+
+
+/* showcase */
+
+.showcase{
+    background:url(https://passion.digital/wp-content/uploads/2015/07/about.jpg) no-repeat center center/cover;
+    height:90vh;
+    /* position: relative; */
+    margin-top:-48px;
+}
+.showcase .about-heading{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    padding: 0 2rem;
+    font-size: 3rem;
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.btn{
+    font-size:1.25rem;
+    padding:0.75rem 1rem;
+    background:#333;
+    margin:2rem;
+    color:#fff;
+    text-align:center;
+}
+
+.learn-more{
+    display: flex;
+}
+
 .page-section-no-padding {
     width: 100%;
     display: block;
@@ -39,7 +152,7 @@ h3 {
     display: inline-block;
     float: none;
     text-align: left;
-    margin-right: -4px;
+    margin-right:   -4px;
 }
 .title-underline {
     margin-left: 0;
@@ -138,4 +251,17 @@ a:focus, a:hover {
         position: relative;
         min-height: 1px;
     }
+}
+
+
+
+footer{
+    font-family: 'Montserrat',sans-serif;
+    background:#333;
+    color:#fff;
+    height:100px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
