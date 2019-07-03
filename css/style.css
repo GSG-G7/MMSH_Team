@@ -139,3 +139,46 @@ a:focus, a:hover {
         min-height: 1px;
     }
 }
+.contactAndMap{
+    display: flex;
+}
+.contactAndMap h2{
+    text-align: center;
+}
+.contactUs{
+    width: 40%;
+    padding: 20px; 
+}
+.contactUs__inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],[type=email],textarea{
+width: 90%;
+padding: 10px;
+margin-top: 5px;
+margin-bottom: 10px;
+border-radius: 5%;
+}
+textarea{
+    height : 170px;
+}
+input[type=submit]{
+width: 70px;
+padding: 10px 15px;
+color: #fff;
+background-color: #FF5800;
+cursor: pointer;
+border-radius: 20%;
+}
+input[type=submit]:hover{
+    background-color: #c84600;
+}
+
+.contactAndMap__map{
+    width : 60%; 
+    height : 375px;
+    margin-top: 70px;
+    margin-right: 15px;
+}
