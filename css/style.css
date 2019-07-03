@@ -148,7 +148,7 @@ a:focus, a:hover {
     padding-left: 20px;
     padding-right: 20px;
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
     .col-md-3 {
         width: 25%;
     }
