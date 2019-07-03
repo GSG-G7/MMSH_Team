@@ -127,10 +127,7 @@ nav{
     display: table;
     content: " ";
 }
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
+
 .text-center {
     text-align: center;
 }
@@ -150,7 +147,6 @@ h3 {
 }
 .col-centered {
     display: inline-block;
-    float: none;
     text-align: left;
     margin-right:   -4px;
 }
@@ -173,16 +169,17 @@ h3 {
     border: 1px solid #ddd;
     padding: 5px;
     border-radius: 10px;
+    position: relative;
 }
 .hovereffect img {
     display: block;
-    position: relative;
     -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;
+    height: 350px;
 }
 .img-responsive {
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 .hovereffect .overlay {
     width: 100%;
@@ -235,9 +232,50 @@ a:focus, a:hover {
     height: 25px;
     display: inline-block;
 }
+.overflow-h { 
+    overflow: hidden;
+}
+.about .content-boxes-v4 i{
+    font-size: 30px;
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-right: 13px;
+}
+.about .content-boxes-v4 h2 {
+    color: #FF5800;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.about .content-boxes-v4 p{
+    margin: 0;
+}
+.md-margin{
+    margin-bottom: 40px;
+}
+.content-boxes-v4 .title{
+    display: inline-block;
+}
+.content-boxes-v4 .item p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 @media (min-width: 992px){
     .col-md-3 {
         width: 25%;
+    }
+    .col-md-4{
+        width: 33.33%
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-8{
+        width: 66.66%   
+    }
+    .col-md-9{
+        width: 75%;
     }
     .col-md-12 {
         width: 100%;
@@ -252,8 +290,6 @@ a:focus, a:hover {
         min-height: 1px;
     }
 }
-
-
 
 footer{
     font-family: 'Montserrat',sans-serif;
