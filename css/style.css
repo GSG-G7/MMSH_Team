@@ -237,3 +237,25 @@ input[type=submit]:hover{
     margin-top: 90px;
     margin-right: 15px;
 }
+.container{
+    width: 750px;
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+@media (max-width:600px){
+    .contactAndMap{
+        display: block;    
+    }
+    .contactUs{
+        width: 100%;
+    }
+    .contactAndMap__map{
+       display: none;
+        
+    }
+
+
+}
