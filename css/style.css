@@ -17,31 +17,41 @@ nav{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    padding:0.25rem;
+    padding:0.5rem;
     position: sticky;
     top:0;
     z-index:1;
 }
-.nav-colored { background-color:#333; }
-.nav-transparent { background-color:transparent;}
+
+
+.nav-colored {
+    background-color:rgb(250, 179, 72);
+}
+.nav-transparent { 
+    background-color:transparent;
+}
 
 .navbarList{
     list-style:none;
     display:flex;
 }
-.menu{display: none;}
+.menu{
+    display:none;
+}
 
 .logo{
-    color:rgb(182, 196, 64);
+    color:rgb(57, 60, 241);
+    font-family:'Roboto',sans-serif;
 }
 
 .logo__icon{
     color:red;
 }
 .navbarList a{
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     padding:10px 20px;
     color:#fff;
+    font-weight: bold;
 
 
 }
@@ -49,25 +59,48 @@ nav{
 .navbarList a:hover{
     background:rgba(202, 126, 12, 0.2);
     border-radius: 5px;
+    color:red;
 }
 @media(max-width:600px){
+    
     nav{
-        flex-direction: column;
-        padding:0.25rem;
+        /* flex-direction: column; */
+        padding:0.5rem;
+        color:red;  
+        justify-content: space-evenly;
     }
+    .menu{
+        display:block;
+        font-size:1.5em;
+    }
+    
     .logo{
-        margin-bottom: 1.5rem;
+        /* margin-bottom: 1.5rem; */
         text-decoration: underline;
     }
+
     .navbarList {
-        display:flex;
+        /* display:flex;
         flex-direction: column;
-        width:100%;
+        width:100%; */
+        display: none;
     }
+
     .navbarList li{
         display: block;
         width:100%;
         text-align: center;
+    }
+
+    .showcase{
+        margin-top:-300px !important;
+        height: 100vh !important;
+        /* width:100%; */
+        /* overflow: auto; */
+    }
+
+    .btn{
+        font-size:1rem !important;
     }
     
 }
@@ -77,14 +110,14 @@ nav{
 
 .showcase{
     background:url(https://passion.digital/wp-content/uploads/2015/07/about.jpg) no-repeat center center/cover;
-    height:90vh;
+    height:110vh;
     /* position: relative; */
-    margin-top:-48px;
+    margin-top:-4rem;
 }
 .showcase .about-heading{
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
+    text-align: center;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -107,6 +140,11 @@ nav{
     text-align:center;
 }
 
+.btn:hover{
+    background:#FF5800;
+    color:#fff;
+}
+
 .learn-more{
     display: flex;
 }
@@ -127,7 +165,26 @@ nav{
     display: table;
     content: " ";
 }
-
+section{
+    padding-top: 2rem;
+}
+footer{
+    margin-top: 2rem; 
+}
+#team .title-section{
+    margin-top: 2rem;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.social-media i{
+    padding: 10px;
+    font-size: 26px;
+}
+.social-media i:hover{
+    color: #FF5800;
+}
 .text-center {
     text-align: center;
 }
@@ -292,15 +349,17 @@ a:focus, a:hover {
 }
 .contactAndMap{
     display: flex;
-    /* background-color: #333; */
 }
+
 .contactAndMap h2{
     text-align: center;
 }
+
 .contactUs{
     width: 40%;
     padding: 20px; 
 }
+
 .contactUs__inputs{
     display: flex;
     flex-direction: column;
@@ -313,9 +372,11 @@ margin-top: 5px;
 margin-bottom: 10px;
 border-radius: 5%;
 }
+
 textarea{
     height : 170px;
 }
+
 input[type=submit]{
 width: 70px;
 padding: 10px 15px;
@@ -324,6 +385,7 @@ background-color: #FF5800;
 cursor: pointer;
 border-radius: 20%;
 }
+
 input[type=submit]:hover{
     background-color: #c84600;
 }
@@ -331,12 +393,14 @@ input[type=submit]:hover{
 .contactAndMap__map{
     width : 60%; 
     height : 400px;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-right: 15px;
 }
+
 .container{
     width: 750px;
 }
+
 @media (min-width: 1200px){
     .container{
         width: 1170px;
