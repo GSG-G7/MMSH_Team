@@ -9,6 +9,9 @@ window.addEventListener('scroll',(e)=>{
 
 if(window.scrollY>500){
 
+window.addEventListener('scroll',(e)=>{
+if(window.scrollY>showcase.offset().bottom)
+{
     navBar.classList.add("nav-colored");
     navBar.classList.remove("nav-transparent");
 
@@ -20,19 +23,11 @@ else{
 }
 });
 
-menu.addEventListener('click',()=>{
+// menu.addEventListener('click',()=>{
 
-    if(navBarList.style.display=='none'){
-        navBarList.style.display="block";
-        logo.style.display="none";
-    }
-    else navBarList.style.display="none";
-
-});
-
-    // if (document.body.scrollTop >= 10 ) {
-    // } 
-    // else {
-    //    
-    // }
-// };
+//     if(navBarList.style.display=='none'){
+//         navBarList.style.display="block";
+//         logo.style.display="none";
+//     }
+//     else navBarList.style.display="none";
+// })
